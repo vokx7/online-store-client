@@ -41,7 +41,7 @@ export const OrderSummary = () => {
         ))}
       </ul>
       <p>Łączny koszt: {calculateTotalPrice()}$</p>
-      <a>Złóż zamowienie</a>
+      <a href="order-confirmation/index.html">Złóż zamowienie</a>
     </>
   );
 };
