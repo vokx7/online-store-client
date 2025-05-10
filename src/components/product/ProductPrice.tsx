@@ -1,11 +1,17 @@
 import { useProductContext } from "../../context/useProductContext";
 
 export const ProductPrice = () => {
-    const {product} = useProductContext();
+  const { product } = useProductContext();
 
-    if(!product) return null;
+  if (!product) return null;
 
-    const {price: {main, fractional}} = product;
+  const {
+    price: { main, fractional },
+  } = product;
 
-    return <h2>{main}.{fractional}</h2>
-}
+  return (
+    <p>
+      {main}.{fractional}$
+    </p>
+  );
+};

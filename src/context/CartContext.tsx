@@ -3,5 +3,5 @@ import type { CartContextType } from "../types";
 
 export const CartContext = createContext<CartContextType>({
   cartList: null,
-  setCartList: () => {}
+  setCartList: () => {},
 });

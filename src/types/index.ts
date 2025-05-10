@@ -13,7 +13,13 @@ export type ProductContexType = {
 
 export type CartList = SingleProduct[] | null;
 
+export type ProductWithQuantity = SingleProduct & { quantity: number };
+
+export type GrouppedCartList = {
+  [key: number]: ProductWithQuantity;
+};
+
 export type CartContextType = {
-  cartList: CartList, 
-  setCartList: React.Dispatch<React.SetStateAction<CartList>>
-}
+  cartList: GrouppedCartList | null;
+  setCartList: React.Dispatch<React.SetStateAction<GrouppedCartList>>;
+};

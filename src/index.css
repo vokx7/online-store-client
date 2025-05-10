@@ -69,7 +69,8 @@ button:focus-visible {
 
 .product-info {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
+  align-items: center;
 }
 
 .product-list {
