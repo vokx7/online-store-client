@@ -4,7 +4,7 @@ import { ProductContext } from "./ProductContext"
 export const useProductContext = () => {
     const context = useContext(ProductContext);
 
-    if(!context) throw new Error('You need to provide ProductContext.Provider to use useProductProvider!');
+    if(!context) throw new Error('You need to provide ProductContext.Provider to use useProductContext!');
 
     return context;
 }
