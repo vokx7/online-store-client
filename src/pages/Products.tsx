@@ -12,7 +12,7 @@ export const Products = () => {
   return (
     <>
       <Link to={"/cart"}>Koszyk zakupów</Link>
-      <h1>Lista produktów:</h1>
+      <h3>Lista produktów:</h3>
       <ProductsList
         products={products}
         productInfo={
