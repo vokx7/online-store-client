@@ -1,54 +1,59 @@
-# React + TypeScript + Vite
+# 🛒 Uproszczony klient sklepu internetowego
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Opis projektu
 
-Currently, two official plugins are available:
+Projekt to uproszczona wersja klienta sklepu internetowego. Aplikacja umożliwia:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* przeglądanie listy produktów,
+* dodawanie i usuwanie produktów z koszyka,
+* przeglądanie podsumowania zamówienia przed jego złożeniem,
+* wyświetlanie potwierdzenia złożenia zamówienia.
 
-## Expanding the ESLint configuration
+Projekt zrealizowany w oparciu o **React + TypeScript**, z użyciem **Vite** jako bundlera oraz **HTML** i **CSS** do stylizacji.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
-```
+## 🧠 Podejście
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Podczas tworzenia aplikacji skupiłam się na:
 
-```js
-// eslint.config.js
-import reactX from "eslint-plugin-react-x";
-import reactDom from "eslint-plugin-react-dom";
+* wykorzystaniu `Context` do zarządzania stanem koszyka oraz wyświetlania treści produktów,
+* przechowywaniu stanu koszyka w `localStorage`,
+* zastosowaniu `React Router` w poruszaniu się po aplikacji (z wyłączeniem strony potwierdzenia),
+* stworzenie `MPA` poprzez Vite dla strony potwierdzenia zamówienia,
+* dobrej organizacji konponentów w celu zachowania przejrzystości kodu.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    "react-x": reactX,
-    "react-dom": reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs["recommended-typescript"].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-});
-```
+---
+
+## ⚙️ Założenia
+
+* Produkty pochodzą z lokalnego źródła danych (products.json).
+* Możliwe jest przejście całego procesu bez dodania przedmiotów do koszyka.
+* Po potwierdzeniu zamówienia i powrocie do listy produktów, koszyk jest czyszczony.
+* Potwierdzenie Zamówienia (order-confirmation) jest oddzielną stroną.
+* Zmniejszanie ilości produktów w koszyku poniżej 1 usuwa cały wiersz.
+* Rozwój wizualny aplikacji nie był brany pod uwagę - minimalna ingerencja w kod CSS.
+
+---
+
+## 🚀 Jak uruchomić projekt lokalnie
+
+1. **Zainstaluj zależności**:
+
+   ```bash
+   npm install
+   ```
+
+2. **Uruchom aplikację w trybie developerskim**:
+
+   ```bash
+   npm run dev
+   ```
+
+3. **Otwórz aplikację w przeglądarce**:
+
+   ```
+   http://localhost:3000
+   ```
+
+
