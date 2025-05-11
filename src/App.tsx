@@ -7,7 +7,7 @@ import { CartProvider } from "./components/cart/CartProvider";
 export const App = () => {
   return (
     <CartProvider>
-      <BrowserRouter basename="/online-store-client">
+      <BrowserRouter basename="/online-store-client/">
         <Routes>
           <Route path="/" element={<Products />} />
           <Route path="/cart" element={<Cart />} />

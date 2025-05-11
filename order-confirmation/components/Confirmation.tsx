@@ -29,7 +29,7 @@ export const Confirmation = () => {
         }
       />
       <TotalCartPrice />
-      <a href="/online-store-client" onClick={resetCart}>
+      <a href="/online-store-client/" onClick={resetCart}>
         Złóż nowe zamówienie
       </a>
     </div>
