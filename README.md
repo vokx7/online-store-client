@@ -1,4 +1,4 @@
-# 🛒 Uproszczony klient sklepu internetowego
+# 🛒 Uproszczony klient sklepu internetowego - Weronika_Pawlak_Web_Wrocław
 
 ## 📌 Opis projektu
 
