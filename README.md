@@ -11,6 +11,8 @@ Projekt to uproszczona wersja klienta sklepu internetowego. Aplikacja umożliwia
 
 Projekt zrealizowany w oparciu o **React + TypeScript**, z użyciem **Vite** jako bundlera oraz **HTML** i **CSS** do stylizacji.
 
+Link: https://vokx7.github.io/online-store-client/
+
 ---
 
 ## 🧠 Podejście
