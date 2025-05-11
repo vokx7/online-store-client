@@ -1,21 +1,18 @@
-import { ProductInfo } from "./ProductInfo";
 import { ProductContext } from "../../context/ProductContext";
-import type { SingleProduct } from "../../types";
-import { AddToCart } from "./AddToCart";
+import type { ProductWithQuantity, SingleProduct } from "../../types";
+import type { ReactNode } from "react";
 
 export type ProductsListProps = {
-  products: SingleProduct[];
+  products: SingleProduct[] | ProductWithQuantity[];
+  productInfo: ReactNode;
 };
 
-export const ProductsList = ({ products }: ProductsListProps) => {
+export const ProductsList = ({ products, productInfo }: ProductsListProps) => {
   return (
     <ul className="product-list">
       {products.map((product) => (
         <ProductContext.Provider value={{ product }} key={product.id}>
-          <li className="product-info">
-            <ProductInfo />
-            <AddToCart />
-          </li>
+          <li className="product-info">{productInfo}</li>
         </ProductContext.Provider>
       ))}
     </ul>

@@ -7,13 +7,13 @@ export type SingleProduct = {
   };
 };
 
-export type ProductContexType = {
-  product: SingleProduct | null;
-};
-
 export type CartList = SingleProduct[] | null;
 
 export type ProductWithQuantity = SingleProduct & { quantity: number };
+
+export type ProductContexType = {
+  product: SingleProduct | ProductWithQuantity | null;
+};
 
 export type GrouppedCartList = {
   [key: number]: ProductWithQuantity;
