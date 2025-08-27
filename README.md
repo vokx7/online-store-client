@@ -1,58 +1,58 @@
-# 🛒 Uproszczony klient sklepu internetowego 
+# 🛒 Simplified Online Store Client 
 
-## 📌 Opis projektu
+## 📌 Project Description
 
-Projekt to uproszczona wersja klienta sklepu internetowego. Aplikacja umożliwia:
+This project is a simplified version of an online store client. The application allows users to:
 
-* przeglądanie listy produktów,
-* dodawanie i usuwanie produktów z koszyka,
-* przeglądanie podsumowania zamówienia przed jego złożeniem,
-* wyświetlanie potwierdzenia złożenia zamówienia.
+* browse a list of products,
+* add and remove products from the cart,
+* view an order summary before placing it,
+* display an order confirmation after submission.
 
-Projekt zrealizowany w oparciu o **React + TypeScript**, z użyciem **Vite** jako bundlera oraz **HTML** i **CSS** do stylizacji.
+The project is built using **React + TypeScript** with **Vite** as the bundler, and **HTML** i **CSS** for styling.
 
 Link: https://vokx7.github.io/online-store-client/
 
 ---
 
-## 🧠 Podejście
+## 🧠 Approach
 
-Podczas tworzenia aplikacji skupiłam się na:
+While developing the application, I focused on:
 
-* wykorzystaniu `Context` do zarządzania stanem koszyka oraz wyświetlania treści produktów,
-* przechowywaniu stanu koszyka w `localStorage`,
-* zastosowaniu `React Router` w poruszaniu się po aplikacji (z wyłączeniem strony potwierdzenia),
-* stworzenie `MPA` poprzez Vite dla strony potwierdzenia zamówienia,
-* dobrej organizacji konponentów w celu zachowania przejrzystości kodu.
-
----
-
-## ⚙️ Założenia
-
-* Produkty pochodzą z lokalnego źródła danych (products.json).
-* Możliwe jest przejście całego procesu bez dodania przedmiotów do koszyka.
-* Po potwierdzeniu zamówienia i powrocie do listy produktów, koszyk jest czyszczony.
-* Potwierdzenie Zamówienia (order-confirmation) jest oddzielną stroną.
-* Zmniejszanie ilości produktów w koszyku poniżej 1 usuwa cały wiersz.
-* Rozwój wizualny aplikacji nie był brany pod uwagę - minimalna ingerencja w kod CSS.
+* using `Context` for managing the cart state and rendering product content,
+* storing the cart state in `localStorage`,
+* applying `React Router` for navigation within the app (excluding the confirmation page),
+* create an `MPA` with Vite for the order confirmation page,
+* maintaining a clean component structure for better code readability.
 
 ---
 
-## 🚀 Jak uruchomić projekt lokalnie
+## ⚙️ Assumptions
 
-1. **Zainstaluj zależności**:
+* Products come from a local data source (products.json).
+* The entire process can be completed without adding items to the cart.
+* After confirming an order and returning to the product list, the cart is cleared.
+* The Order Confirmation (order-confirmation) is a separate page.
+* Reducing the quantity of a product in the cart below 1 removes the entire row.
+* Visual design improvements were not a priority – minimal CSS adjustments were made.
+
+---
+
+## 🚀 How to run the project locally
+
+1. **Install dependencies**:
 
    ```bash
    npm install
    ```
 
-2. **Uruchom aplikację w trybie developerskim**:
+2. **Run the app in development mode**:
 
    ```bash
    npm run dev
    ```
 
-3. **Otwórz aplikację w przeglądarce**:
+3. **Open the app in your browser**:
 
    ```
    http://localhost:3000
