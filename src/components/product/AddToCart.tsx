@@ -16,5 +16,5 @@ export const AddToCart = () => {
       return { ...prevCart, [product.id]: newProduct };
     });
 
-  return <Button onClick={handleAddToCart}>Dodaj do koszyka</Button>;
+  return <Button onClick={handleAddToCart}>Add to cart</Button>;
 };

@@ -7,5 +7,5 @@ export const PartialProductPrice = () => {
   const cartProduct = product as ProductWithQuantity;
   if (!cartProduct) return null;
 
-  return <p>suma: {calculateProductPrice(cartProduct)}$</p>;
+  return <p>In total: {calculateProductPrice(cartProduct)}$</p>;
 };

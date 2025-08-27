@@ -16,5 +16,5 @@ export const TotalCartPrice = () => {
     return Math.round(total * 100) / 100;
   };
 
-  return <p>Łączny koszt: {calculateTotalPrice()}$</p>;
+  return <p>Total cost: {calculateTotalPrice()}$</p>;
 };

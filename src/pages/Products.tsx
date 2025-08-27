@@ -11,8 +11,8 @@ export const Products = () => {
 
   return (
     <>
-      <Link to={"/cart"}>Koszyk zakupów</Link>
-      <h3>Lista produktów:</h3>
+      <Link to={"/cart"}>Shopping cart</Link>
+      <h3>Product list:</h3>
       <ProductsList
         products={products}
         productInfo={

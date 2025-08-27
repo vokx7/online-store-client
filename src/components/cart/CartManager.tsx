@@ -51,7 +51,7 @@ export const CartManager = () => {
       <Button onClick={() => handleRemoveSingleProduct(cartProduct.id)}>
         -
       </Button>
-      <Button onClick={() => handleDeleteProduct(cartProduct.id)}>Usuń</Button>
+      <Button onClick={() => handleDeleteProduct(cartProduct.id)}>Delete</Button>
     </>
   );
 };

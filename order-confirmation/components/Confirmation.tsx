@@ -16,8 +16,8 @@ export const Confirmation = () => {
 
   return (
     <div>
-      <h1 className="h1-confirmation">Zamówienie złożone pomyślnie!</h1>
-      <h2>Twoje podsumowanie:</h2>
+      <h1 className="h1-confirmation">Order placed successfully!</h1>
+      <h2>Your summary:</h2>
       <ProductsList
         products={Object.values(cartList)}
         productInfo={
@@ -30,7 +30,7 @@ export const Confirmation = () => {
       />
       <TotalCartPrice />
       <a href="/online-store-client/" onClick={resetCart}>
-        Złóż nowe zamówienie
+        Place a new order
       </a>
     </div>
   );

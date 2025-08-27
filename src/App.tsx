@@ -7,8 +7,7 @@ import { CartProvider } from "./components/cart/CartProvider";
 export const App = () => {
   return (
     <CartProvider>
-      <h1>Weronika_Pawlak_Web_Wrocław</h1>
-      <h2>Zadanie: Uproszczona wersja klienta sklepu internetowego</h2>
+      <h1>A simplified version of the online store client</h1>
       <BrowserRouter basename="/online-store-client/">
         <Routes>
           <Route path="/" element={<Products />} />

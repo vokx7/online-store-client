@@ -9,5 +9,5 @@ export const ProductQuantity = () => {
 
   const { quantity } = cartProduct;
 
-  return <p>ilość: {quantity}</p>;
+  return <p>Quantity: {quantity}</p>;
 };

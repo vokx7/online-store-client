@@ -13,8 +13,8 @@ export const OrderSummary = () => {
 
   return (
     <>
-      <Link to={"/cart"}>Powrót do koszyka</Link>
-      <h1>Twoje podsumowanie:</h1>
+      <Link to={"/cart"}>Back to cart</Link>
+      <h1>Your summary:</h1>
       <ProductsList
         products={Object.values(cartList)}
         productInfo={
@@ -26,7 +26,7 @@ export const OrderSummary = () => {
         }
       />
       <TotalCartPrice />
-      <a href="order-confirmation/index.html">Złóż zamowienie</a>
+      <a href="order-confirmation/index.html">Place your order</a>
     </>
   );
 };
